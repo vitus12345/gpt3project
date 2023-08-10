@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    font-family: Manrope, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin: 0 !important;
+}
+
+
+
+$vic-bc-color:90deg,#002853 0%, #040c18 97.40%;
+$vic-font-color:90deg, #AE67FA 0%, #F49867 97.40%;
+
+header{
+    .nav-topa{
+        background-image: linear-gradient($vic-bc-color);
+        // margin-top: 20px;
+    }
+    ul{
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    li{
+        a{
+              color: #fff !important;
+              margin-right: 10px;
+        }
+    }
+    .btn1{
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        border: none;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+    .btn2{
+        background-color: #FF4820;
+        color: #fff;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        border-radius: 3px;
+        padding: 10px 30px;
+    }
+
+    .btn2:hover{
+        background: linear-gradient($vic-font-color);
+    }
+
+   
+
+}
+
+// styling my hero section
+
+.hero-section{
+
+    .hero-page{
+        background-image: linear-gradient($vic-bc-color);
+    } 
+
+    h1{
+        margin-top: 70px;
+        font-size: 48px;
+        font-weight: 700;
+        background: linear-gradient($vic-font-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .top-p{
+        color: #81AFDD;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 30px;
+        
+    }
+
+    form{
+        margin: 30px 0;
+    }
+
+    #email{
+        background-color: #052D56;
+        padding: 9px 100px 10px 15px;
+        border: none;
+        outline: none;
+    }
+
+    ::placeholder{
+        font-size: 12px;
+        color: #3D6184;
+    }
+    .sub{
+        background-color: #FF4820;
+        color: #fff;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        border-radius:3px;
+        padding: 12px 30px;
+        margin-left: -4px;
+        
+    }
+
+    .sub:hover{
+        background: linear-gradient($vic-font-color);
+
+    }
+
+    .visit{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 110px;
+    }
+
+    .sec-p{
+        color: #fff;
+        font-size: 10px;
+        font-weight: 200;
+        margin-top: 20px;
+
+    }
+
+    .people{
+        width: 40%;
+    }
+
+   .company{
+    margin-bottom: 100px;
+    margin-left:20%;
+   }
+
+
+
+
+
+}
+
+
+
+
+.sec-two{
+
+    .sec-sub{
+        background: #040C18;
+        padding-bottom: 80px;
+        
+    }
+
+    .sec-page{
+        background: linear-gradient(to bottom right,#042d58 20%, #0F4279 90%, #1B78DE);
+        border-radius: 2px;
+        
+    }
+
+    .wat{
+        margin-left: 40px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    h3{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 40px;
+        width: 90%;
+        margin-bottom: 50px;
+        
+    }
+    .sec-two-text{
+        color: #81AFDD;
+        font-size: 16px;
+        width: 85%;
+        margin-left: 40px;
+    }
+
+    .explore{
+        color: #FF8A71;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-left: 60px;
+    }
+
+    h2{
+        background: linear-gradient($vic-font-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 34px;
+        font-weight: 800;
+        margin-top: 35px;
+        margin-left: 40px;
+
+    }
+
+
+
+}
+
+
+// styling the third section
+
+
+.third-sec{
+
+    .third-sub{
+        background-image: linear-gradient($vic-bc-color);
+    }
+
+    .third-page{
+        margin-top: 80px;
+        margin-bottom:50px ;
+    }
+
+    h3{
+        background: linear-gradient($vic-font-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 34px;
+        font-weight: 800;
+    }
+
+    .tdtext-one{
+        color: #FF8A71;
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    .tdtext-two{
+        color: #fff;
+    }
+
+    .tdtext-last{
+        color: #81AFDD;
+        font-size: 16px;
+    }
+
+}
+
+
+// fourth section
+
+
+.fourth-sec{
+    .fourth-sub{
+        background: linear-gradient($vic-bc-color);
+    }
+
+
+    .fourth-page{
+        display: flex;
+        margin: 50px 0;
+    }
+
+    .fourth-text{
+        margin-top: 350px;
+    }
+
+    .fttext-one{
+        color: #71E5FF;
+        
+    }
+
+    h3{
+        background: linear-gradient($vic-font-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 34px;
+        font-weight: 800;
+        margin: 30px 0;
+    }
+
+    .fttext-two{
+        color: #81AFDD;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .fttext-last{
+        color: #FF8A71;
+        font-size: 15px;
+    }
+    
+
+
+
+}
+
+// styling the aside section
+
+
+
+aside{
+    .aside-sec{
+        background: linear-gradient($vic-bc-color);
+        
+    }
+
+    .aside-page{
+        background: linear-gradient($vic-font-color);
+        display: flex;
+        margin-top: 100px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 30px 30px;
+        border-radius: 5px;
+    }
+
+    p{
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    h3{
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .aside-btn{
+        margin-left: 250px;
+        margin-top: 10px;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        padding: 12px 30px;
+        background: black;
+        color: #fff;
+    }
+
+    .aside-btn:hover{
+        background: #fff;
+        color: black;
+    }
+
+
+
+}
+
+
+// styling the fifth section
+
+.fifth-sec{
+
+    .fifth-sub{
+        background: #040C18;
+    }
+
+    .fifth-page{
+        margin-bottom: 130px;
+    }
+
+    h2{
+        font-size:48px;
+        font-weight: 800;
+        background: linear-gradient($vic-font-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 100px 0;
+    }
+
+    .image-one{
+        width: 85%;
+    }
+
+
+    .image-two{
+        width: 99.9%;
+        margin-left: -30px;
+    }
+    .image-three{
+        width: 99.9%;   
+    }
+
+    .image-four{
+        width: 99.9%;
+        margin-left: -30px;
+    }
+
+    .image-five{
+        width: 99.9%;
+    }
+
+
+
+}
+
+// styling the last section
+
+.last-sec{
+
+    .last-sub{
+        background: #031B34;
+    }
+
+    .last-page{
+        margin-top: 100px;
+    }
+
+    .last-text{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 48px;
+        font-weight: 800;
+        background: linear-gradient($vic-font-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .last-btn{
+        border: none;
+        background: transparent;
+        outline: 1px solid #fff;
+        color: #fff;
+        padding: 10px 10px;
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+
+    .last-btn:hover{
+        background: linear-gradient($vic-font-color);
+        color: black;
+    }
+
+
+    p{
+        color: #fff;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .last-part{
+        font-weight: 800;
+    }
+
+    .last-image{
+        margin-bottom: 20px;
+        
+    }
+
+    .last-con{
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+
+
+
