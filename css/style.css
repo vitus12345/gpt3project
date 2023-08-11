@@ -103,6 +103,34 @@ header .btn2:hover {
   margin-bottom: 100px;
   margin-left: 20%;
 }
+@keyframes roboot-head {
+  100% {
+    transform: translateY(20%);
+  }
+}
+.hero-section .robbot {
+  animation: roboot-head 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .hero-section .company {
+    width: 90%;
+    margin-left: 0%;
+    align-items: center;
+  }
+  .hero-section .visit {
+    flex-direction: column;
+  }
+  .hero-section hi {
+    font-size: 30px;
+  }
+  .hero-section .top-p {
+    font-size: 18px;
+  }
+}
 
 .sec-two .sec-sub {
   background: #040C18;
@@ -243,6 +271,14 @@ aside .aside-btn:hover {
   background: #fff;
   color: black;
 }
+@media screen and (max-width: 992px) {
+  aside .aside-page {
+    flex-direction: column;
+  }
+  aside .aside-btn {
+    margin-left: 0px;
+  }
+}
 
 .fifth-sec .fifth-sub {
   background: #040C18;
@@ -275,6 +311,14 @@ aside .aside-btn:hover {
 }
 .fifth-sec .image-five {
   width: 99.9%;
+}
+@media screen and (max-width: 992px) {
+  .fifth-sec .image-two {
+    margin-left: 0;
+  }
+  .fifth-sec .image-four {
+    margin-left: 0;
+  }
 }
 
 .last-sec .last-sub {

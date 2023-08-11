@@ -136,9 +136,46 @@ header{
     margin-bottom: 100px;
     margin-left:20%;
    }
+   @keyframes roboot-head {
+    100%{
+        transform: translateY(20%);
+    }
+   }
 
+   .robbot{
+    animation: roboot-head 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 100%;
 
+   }
+@media screen and (max-width: 992px) {
+    .company{
+        width: 90%;
+        margin-left: 0%;
+        align-items: center;
+    }
 
+    .visit{
+        flex-direction: column;
+    }
+
+    hi{
+        font-size: 30px;
+
+    }
+
+    .top-p{
+        font-size: 18px;
+    }
+
+    .robbot{
+    
+    }
+
+    
+}
 
 
 }
@@ -343,7 +380,16 @@ aside{
         color: black;
     }
 
+    @media screen and (max-width: 992px){
+        .aside-page{
+            flex-direction: column;
+        } 
 
+        .aside-btn{
+            margin-left: 0px;
+        }
+
+    }
 
 }
 
@@ -393,8 +439,24 @@ aside{
     }
 
 
+    @media screen and (max-width: 992px){
+        .image-two{
+            margin-left: 0;
+        }
+
+        .image-four{
+            margin-left: 0;
+        }
+    }
+
+
+
 
 }
+
+
+
+
 
 // styling the last section
 
