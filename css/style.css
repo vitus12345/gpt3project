@@ -120,15 +120,25 @@ header .btn2:hover {
     width: 90%;
     margin-left: 0%;
     align-items: center;
+    margin-top: 80px;
+    margin-left: 20px;
   }
   .hero-section .visit {
     flex-direction: column;
+    margin-bottom: 50px;
   }
-  .hero-section hi {
+  .hero-section h1 {
     font-size: 30px;
   }
   .hero-section .top-p {
     font-size: 18px;
+  }
+  .hero-section #email {
+    padding: 9px 50px 10px 5px;
+  }
+  .hero-section .sub {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
@@ -175,6 +185,11 @@ header .btn2:hover {
   margin-top: 35px;
   margin-left: 40px;
 }
+@media screen and (max-width: 992px) {
+  .sec-two h2 {
+    font-size: 25px;
+  }
+}
 
 .third-sec .third-sub {
   background-image: linear-gradient(90deg, #002853 0%, #040c18 97.4%);
@@ -203,12 +218,20 @@ header .btn2:hover {
   color: #81AFDD;
   font-size: 16px;
 }
+@media screen and (max-width: 992px) {
+  .third-sec h3 {
+    font-size: 20px;
+  }
+  .third-sec .tdtext-last {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
 
 .fourth-sec .fourth-sub {
   background: linear-gradient(90deg, #002853 0%, #040c18 97.4%);
 }
 .fourth-sec .fourth-page {
-  display: flex;
   margin: 50px 0;
 }
 .fourth-sec .fourth-text {
@@ -216,6 +239,9 @@ header .btn2:hover {
 }
 .fourth-sec .fttext-one {
   color: #71E5FF;
+}
+.fourth-sec .ft-image {
+  width: 100%;
 }
 .fourth-sec h3 {
   background: linear-gradient(90deg, #AE67FA 0%, #F49867 97.4%);
@@ -234,6 +260,11 @@ header .btn2:hover {
 .fourth-sec .fttext-last {
   color: #FF8A71;
   font-size: 15px;
+}
+@media screen and (max-width: 992px) {
+  .fourth-sec .fourth-text {
+    margin-top: 100px;
+  }
 }
 
 aside .aside-sec {
@@ -277,6 +308,13 @@ aside .aside-btn:hover {
   }
   aside .aside-btn {
     margin-left: 0px;
+  }
+  aside .aside-btn {
+    width: 100%;
+    margin-top: 30px;
+  }
+  aside .aside-page {
+    margin: 0 10px;
   }
 }
 

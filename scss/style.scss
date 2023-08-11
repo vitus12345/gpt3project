@@ -150,18 +150,24 @@ header{
     width: 100%;
 
    }
+
+
 @media screen and (max-width: 992px) {
     .company{
         width: 90%;
         margin-left: 0%;
         align-items: center;
+        margin-top: 80px;
+        margin-left: 20px;
     }
 
     .visit{
         flex-direction: column;
+        margin-bottom: 50px;
+        
     }
 
-    hi{
+    h1{
         font-size: 30px;
 
     }
@@ -170,8 +176,17 @@ header{
         font-size: 18px;
     }
 
-    .robbot{
-    
+   
+
+    #email{
+        padding: 9px 50px 10px 5px ;
+        
+    }
+
+    .sub{
+        margin-left: 0;
+        // width: 85%;
+        margin-top: 20px;
     }
 
     
@@ -239,6 +254,14 @@ header{
     }
 
 
+    @media screen and (max-width: 992px){
+
+        h2{
+            font-size: 25px;
+        }
+    }
+
+
 
 }
 
@@ -281,6 +304,23 @@ header{
         font-size: 16px;
     }
 
+
+    @media screen and (max-width: 992px){
+
+        h3{
+
+            font-size: 20px;
+        }
+
+        .tdtext-last{
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+
+
+    }
+
 }
 
 
@@ -294,7 +334,7 @@ header{
 
 
     .fourth-page{
-        display: flex;
+        // display: flex;
         margin: 50px 0;
     }
 
@@ -305,6 +345,10 @@ header{
     .fttext-one{
         color: #71E5FF;
         
+    }
+
+    .ft-image{
+        width: 100%;
     }
 
     h3{
@@ -326,6 +370,18 @@ header{
     .fttext-last{
         color: #FF8A71;
         font-size: 15px;
+    }
+
+    @media screen and (max-width: 992px){
+
+       
+
+        .fourth-text{
+
+            margin-top: 100px;
+        }
+    
+
     }
     
 
@@ -389,7 +445,18 @@ aside{
             margin-left: 0px;
         }
 
+        .aside-btn{
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .aside-page{
+            margin: 0 10px;
+        }
+
     }
+
+    
 
 }
 
