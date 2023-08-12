@@ -51,6 +51,30 @@ header{
     .btn2:hover{
         background: linear-gradient($vic-font-color);
     }
+    @media screen and (max-width: 992px){
+
+        .btn1{
+            width: 100%;
+            outline: 1px solid #fff;
+            padding: 10px 30px;
+            border-radius: 3px;
+            margin-top: 10px;
+
+        }
+
+        .btn1:hover{
+            background: linear-gradient($vic-font-color);
+        }
+
+
+        .btn2{
+            width: 100%;
+            margin-top: 30px;
+        }
+
+
+
+    }
 
    
 
@@ -138,7 +162,7 @@ header{
    }
    @keyframes roboot-head {
     100%{
-        transform: translateY(20%);
+        transform: translateY(10%);
     }
    }
 
@@ -178,14 +202,10 @@ header{
 
    
 
-    #email{
-        padding: 9px 50px 10px 5px ;
-        
-    }
 
     .sub{
         margin-left: 0;
-        // width: 85%;
+        
         margin-top: 20px;
     }
 
@@ -257,8 +277,47 @@ header{
     @media screen and (max-width: 992px){
 
         h2{
-            font-size: 25px;
+            font-size: 20px;
+            margin-left: 1px;
         }
+
+        .sec-two-text{
+            margin-left: 1px;
+        }
+
+        h3{
+            margin-left: 1px;
+        }
+
+        .explore{
+            margin-left: 1px;
+        }
+
+
+
+
+
+
+    }
+
+    @media screen and (min-width: 650px) and (max-width: 990px){
+
+        .sec-two-text{
+            margin-left: 1px;
+        }
+
+        h3{
+            margin-left: 1px;
+        }
+        h2{
+            margin-left: 1px;
+        }
+
+        .explore{
+            margin-left: 1px;
+        }
+
+
     }
 
 
@@ -436,9 +495,10 @@ aside{
         color: black;
     }
 
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: 645px){
         .aside-page{
             flex-direction: column;
+            margin: 0 10px;
         } 
 
         .aside-btn{
@@ -450,12 +510,29 @@ aside{
             margin-top: 30px;
         }
 
-        .aside-page{
-            margin: 0 10px;
-        }
+        
 
     }
 
+    @media screen and (min-width: 650px) and (max-width: 990px){
+
+       .aside-page{
+        margin:0;
+        flex-direction: column;
+        
+        
+        
+       }
+
+    .aside-btn{
+        width: 100%;
+        margin: 30px 0 20px 0;
+
+    }
+
+   
+       
+    }
     
 
 }
@@ -508,11 +585,89 @@ aside{
 
     @media screen and (max-width: 992px){
         .image-two{
-            margin-left: 0;
+            margin-left: 1px;
+            width: 90%;
+            margin-bottom: 40px;
         }
 
         .image-four{
             margin-left: 0;
+            width: 90%;
+            margin-bottom: 40px;
+        }
+
+        .image-one{
+            width: 90%;
+            margin-bottom: 40px;
+        }
+
+        .image-three{
+            width: 90%;
+        }
+
+        .image-five{
+            width: 90%;
+        }
+
+
+    }
+
+
+    @media screen and (min-width: 2000px) and (max-width: 2250px){
+
+        .image-four{
+            width: 120%;
+            margin-top: 70px;
+        }
+
+        .image-five{
+            width: 120%;
+            margin-left: 50px;
+            margin-top: 70px;
+        }
+
+        .image-two{
+            width: 85%;
+        }
+
+        .image-three{
+            width: 85%;
+            margin-left: -90px;
+
+        }
+
+        .image-one{
+            width: 78%;
+        }
+
+
+    }
+
+    @media screen and (min-width: 2300px) and (max-width: 3000px){
+
+        .image-four{
+            width: 130%;
+            margin-top: 70px;
+        }
+
+        .image-five{
+            width: 130%;
+            margin-left: 100px;
+            margin-top: 70px;
+        }
+
+        .image-two{
+            width: 75%;
+        }
+
+        .image-three{
+            width: 75%;
+            margin-left: -140px;
+
+        }
+
+        .image-one{
+            width: 70%;
         }
     }
 
@@ -586,6 +741,10 @@ aside{
         text-align: center;
         margin-top: 80px;
         margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 992px){
+
     }
 
 

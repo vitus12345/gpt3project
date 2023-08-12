@@ -40,6 +40,22 @@ header .btn2 {
 header .btn2:hover {
   background: linear-gradient(90deg, #AE67FA 0%, #F49867 97.4%);
 }
+@media screen and (max-width: 992px) {
+  header .btn1 {
+    width: 100%;
+    outline: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  header .btn1:hover {
+    background: linear-gradient(90deg, #AE67FA 0%, #F49867 97.4%);
+  }
+  header .btn2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
 
 .hero-section .hero-page {
   background-image: linear-gradient(90deg, #002853 0%, #040c18 97.4%);
@@ -105,7 +121,7 @@ header .btn2:hover {
 }
 @keyframes roboot-head {
   100% {
-    transform: translateY(20%);
+    transform: translateY(10%);
   }
 }
 .hero-section .robbot {
@@ -132,9 +148,6 @@ header .btn2:hover {
   }
   .hero-section .top-p {
     font-size: 18px;
-  }
-  .hero-section #email {
-    padding: 9px 50px 10px 5px;
   }
   .hero-section .sub {
     margin-left: 0;
@@ -187,7 +200,31 @@ header .btn2:hover {
 }
 @media screen and (max-width: 992px) {
   .sec-two h2 {
-    font-size: 25px;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+  .sec-two .sec-two-text {
+    margin-left: 1px;
+  }
+  .sec-two h3 {
+    margin-left: 1px;
+  }
+  .sec-two .explore {
+    margin-left: 1px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 990px) {
+  .sec-two .sec-two-text {
+    margin-left: 1px;
+  }
+  .sec-two h3 {
+    margin-left: 1px;
+  }
+  .sec-two h2 {
+    margin-left: 1px;
+  }
+  .sec-two .explore {
+    margin-left: 1px;
   }
 }
 
@@ -302,9 +339,10 @@ aside .aside-btn:hover {
   background: #fff;
   color: black;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 645px) {
   aside .aside-page {
     flex-direction: column;
+    margin: 0 10px;
   }
   aside .aside-btn {
     margin-left: 0px;
@@ -313,8 +351,15 @@ aside .aside-btn:hover {
     width: 100%;
     margin-top: 30px;
   }
+}
+@media screen and (min-width: 650px) and (max-width: 990px) {
   aside .aside-page {
-    margin: 0 10px;
+    margin: 0;
+    flex-direction: column;
+  }
+  aside .aside-btn {
+    width: 100%;
+    margin: 30px 0 20px 0;
   }
 }
 
@@ -352,10 +397,66 @@ aside .aside-btn:hover {
 }
 @media screen and (max-width: 992px) {
   .fifth-sec .image-two {
-    margin-left: 0;
+    margin-left: 1px;
+    width: 90%;
+    margin-bottom: 40px;
   }
   .fifth-sec .image-four {
     margin-left: 0;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .fifth-sec .image-one {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .fifth-sec .image-three {
+    width: 90%;
+  }
+  .fifth-sec .image-five {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 2250px) {
+  .fifth-sec .image-four {
+    width: 120%;
+    margin-top: 70px;
+  }
+  .fifth-sec .image-five {
+    width: 120%;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  .fifth-sec .image-two {
+    width: 85%;
+  }
+  .fifth-sec .image-three {
+    width: 85%;
+    margin-left: -90px;
+  }
+  .fifth-sec .image-one {
+    width: 78%;
+  }
+}
+@media screen and (min-width: 2300px) and (max-width: 3000px) {
+  .fifth-sec .image-four {
+    width: 130%;
+    margin-top: 70px;
+  }
+  .fifth-sec .image-five {
+    width: 130%;
+    margin-left: 100px;
+    margin-top: 70px;
+  }
+  .fifth-sec .image-two {
+    width: 75%;
+  }
+  .fifth-sec .image-three {
+    width: 75%;
+    margin-left: -140px;
+  }
+  .fifth-sec .image-one {
+    width: 70%;
   }
 }
 
