@@ -14,6 +14,10 @@
 $vic-bc-color:90deg,#002853 0%, #040c18 97.40%;
 $vic-font-color:90deg, #AE67FA 0%, #F49867 97.40%;
 
+.htbody{
+    background: linear-gradient($vic-bc-color);
+}
+
 header{
     .nav-topa{
         background-image: linear-gradient($vic-bc-color);
@@ -96,6 +100,9 @@ header{
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-name: head-text;
+        animation-duration: 2s;
+
     }
 
     .top-p{
@@ -112,9 +119,10 @@ header{
 
     #email{
         background-color: #052D56;
-        padding: 9px 100px 10px 15px;
+        padding: 9px 100px 13px 15px;
         border: none;
         outline: none;
+        border-radius: 5px 0 0 5px;
     }
 
     ::placeholder{
@@ -127,9 +135,10 @@ header{
         outline: none;
         border: none;
         font-size: 13px;
-        border-radius:3px;
-        padding: 12px 30px;
-        margin-left: -4px;
+        border-radius:0 5px 5px 0;
+        padding: 12.5px 30px;
+        margin-left: -3px;
+    
         
     }
 
@@ -156,10 +165,15 @@ header{
         width: 40%;
     }
 
-   .company{
-    margin-bottom: 100px;
-    margin-left:20%;
+  
+
+
    }
+
+
+//    animation section starts
+
+
    @keyframes roboot-head {
     100%{
         transform: translateY(10%);
@@ -175,19 +189,48 @@ header{
 
    }
 
+   @keyframes head-text{
+    0%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    100%{
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+   }
+
+
+   
+   @keyframes head-text-two{
+    0%{
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+
+    100%{
+
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+   
+// animation section end
 
 @media screen and (max-width: 992px) {
-    .company{
-        width: 90%;
-        margin-left: 0%;
-        align-items: center;
-        margin-top: 80px;
-        margin-left: 20px;
-    }
+    
 
     .visit{
         flex-direction: column;
         margin-bottom: 50px;
+        align-items: center;
         
     }
 
@@ -200,20 +243,60 @@ header{
         font-size: 18px;
     }
 
+    #email{
+        width: 100%;
+    }
    
 
 
     .sub{
         margin-left: 0;
-        
+        width: 100%;
         margin-top: 20px;
+        border-radius: 5px;
     }
+   
 
     
 }
 
+.logo{
+
+
+    
+
+    .logo-text{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    img{
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    @media screen and (max-width: 992px){
+
+        img{
+            width: 40px;
+        }
+
+        
+
+
+
+    }
+
+
+
 
 }
+
+
+
 
 
 
@@ -221,7 +304,7 @@ header{
 .sec-two{
 
     .sec-sub{
-        background: #040C18;
+        // background: #040C18;
         padding-bottom: 80px;
         
     }
@@ -245,6 +328,10 @@ header{
         margin-left: 40px;
         width: 90%;
         margin-bottom: 50px;
+        animation-name: head-text-two;
+        animation-duration: 2s;
+
+        
         
     }
     .sec-two-text{
@@ -270,6 +357,8 @@ header{
         font-weight: 800;
         margin-top: 35px;
         margin-left: 40px;
+        animation-name: head-text-two;
+        animation-duration: 2s;
 
     }
 
@@ -346,6 +435,8 @@ header{
         -webkit-text-fill-color: transparent;
         font-size: 34px;
         font-weight: 800;
+        animation-name: head-text-two;
+        animation-duration: 2s;
     }
 
     .tdtext-one{
@@ -356,6 +447,8 @@ header{
 
     .tdtext-two{
         color: #fff;
+        animation-name: head-text;
+        animation-duration: 2s;
     }
 
     .tdtext-last{
@@ -398,7 +491,7 @@ header{
     }
 
     .fourth-text{
-        margin-top: 350px;
+        margin-top: 220px;
     }
 
     .fttext-one{
@@ -418,6 +511,8 @@ header{
         font-size: 34px;
         font-weight: 800;
         margin: 30px 0;
+        animation-name: head-text-two;
+        animation-duration: 2s;
     }
 
     .fttext-two{
@@ -440,6 +535,9 @@ header{
             margin-top: 100px;
         }
     
+        h3{
+            font-size: 25px;
+        }
 
     }
     
@@ -542,9 +640,7 @@ aside{
 
 .fifth-sec{
 
-    .fifth-sub{
-        background: #040C18;
-    }
+    
 
     .fifth-page{
         margin-bottom: 130px;
@@ -558,118 +654,164 @@ aside{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 100px 0;
+        animation-name: head-text-two;
+        animation-duration: 2s;
     }
 
     .image-one{
-        width: 85%;
+        width: 100%;
     }
 
 
     .image-two{
-        width: 99.9%;
-        margin-left: -30px;
+        width: 100%;
+        
     }
     .image-three{
-        width: 99.9%;   
+        width: 100%;   
     }
 
     .image-four{
-        width: 99.9%;
-        margin-left: -30px;
+        width: 100%;
+        
     }
 
     .image-five{
-        width: 99.9%;
+        width: 100%;
+    }
+
+    .fifth-text1{
+        height: 100%;
+        background: #042C54;
+        color: #fff;
+        position: relative;
+        
+
+    }
+    .card-item-body{
+        padding: 30px;
+    }
+
+    .text-onep{
+        font-size: 10px;
     }
 
 
-    @media screen and (max-width: 992px){
-        .image-two{
-            margin-left: 1px;
-            width: 85%;
-            margin-bottom: 40px;
-        }
+    .text-oneh{
+        font-size: 25px;
+        font-weight: 800;
+        animation-name: head-text;
+        animation-duration: 2s;
+    }
 
-        .image-four{
-            margin-left: 0;
-            width: 85%;
-            margin-bottom: 40px;
-        }
-
-        .image-one{
-            width: 75%;
-            margin-bottom: 40px;
-            margin-left: 18px;
-        }
-
-        .image-three{
-            width: 85%;
-        }
-
-        .image-five{
-            width: 85%;
-        }
-
-
+    .text-onepb{
+        position: absolute;
+        bottom: 3%;
+        
     }
 
 
-    @media screen and (min-width: 2000px) and (max-width: 2250px){
-
-        .image-four{
-            width: 120%;
-            margin-top: 70px;
-        }
-
-        .image-five{
-            width: 120%;
-            margin-left: 50px;
-            margin-top: 70px;
-        }
-
-        .image-two{
-            width: 85%;
-        }
-
-        .image-three{
-            width: 85%;
-            margin-left: -90px;
-
-        }
-
-        .image-one{
-            width: 78%;
-        }
-
-
+    .text-onepb{
+        font-size: 10px;
     }
 
-    @media screen and (min-width: 2300px) and (max-width: 3000px){
+    .text-twop{
+        font-size: 10px;
+    }
 
-        .image-four{
-            width: 130%;
-            margin-top: 70px;
+
+
+
+    .text-twoh{
+        font-size: 15px;
+        font-weight: 800;
+        padding-bottom: 50px;
+        animation-name: head-text;
+        animation-duration: 2s;
+    }
+
+    .text-twopb{
+        font-size: 10px;
+    }
+
+
+
+    .fifth-text{
+        background: #042C54;
+        color: #fff;
+        padding: 20px 20px;
+    }
+
+    
+
+    @media screen and (max-width: 640px){
+
+
+        h2{
+            font-size: 25px;
         }
 
-        .image-five{
-            width: 130%;
-            margin-left: 100px;
-            margin-top: 70px;
+
+        .text-onepb{
+            bottom: 0.5%;
         }
 
         .image-two{
-            width: 75%;
+            margin-top: 40px;
+            
         }
 
         .image-three{
-            width: 75%;
-            margin-left: -140px;
 
+            margin-top: 40px;
         }
 
-        .image-one{
-            width: 70%;
+        .image-five{
+
+            margin-top: 40px;
         }
+
+        .fifth-text1{
+            width: 90%;
+            margin-left: 15px;
+        }
+
+        br{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 650px) and (max-width: 990px){
+
+        .fifth-text1{
+            width: 95%;
+            margin-left: 10px;
+        }
+
+        .text-onepb{
+            bottom: 0.5%;
+        }
+
+        .image-two{
+            margin-top: 40px;
+            
+        }
+
+        .image-three{
+
+            margin-top: 40px;
+        }
+
+        .image-five{
+
+            margin-top: 40px;
+        }
+
+        br{
+            display: none;
+        }
+
+
     }
 
 
@@ -705,6 +847,8 @@ aside{
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-name: head-text;
+        animation-duration: 2s;
     }
 
     .last-btn{
@@ -744,7 +888,15 @@ aside{
         margin-bottom: 30px;
     }
 
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: 992px){ 
+
+        br{
+            display: none;
+        }
+
+        h2{
+            font-size: 25px;
+        }
 
     }
 

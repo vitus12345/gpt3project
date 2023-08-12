@@ -9,6 +9,10 @@
   margin: 0 !important;
 }
 
+.htbody {
+  background: linear-gradient(90deg, #002853 0%, #040c18 97.4%);
+}
+
 header .nav-topa {
   background-image: linear-gradient(90deg, #002853 0%, #040c18 97.4%);
 }
@@ -68,6 +72,8 @@ header .btn2:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-name: head-text;
+  animation-duration: 2s;
 }
 .hero-section .top-p {
   color: #81AFDD;
@@ -80,9 +86,10 @@ header .btn2:hover {
 }
 .hero-section #email {
   background-color: #052D56;
-  padding: 9px 100px 10px 15px;
+  padding: 9px 100px 13px 15px;
   border: none;
   outline: none;
+  border-radius: 5px 0 0 5px;
 }
 .hero-section ::placeholder {
   font-size: 12px;
@@ -94,9 +101,9 @@ header .btn2:hover {
   outline: none;
   border: none;
   font-size: 13px;
-  border-radius: 3px;
-  padding: 12px 30px;
-  margin-left: -4px;
+  border-radius: 0 5px 5px 0;
+  padding: 12.5px 30px;
+  margin-left: -3px;
 }
 .hero-section .sub:hover {
   background: linear-gradient(90deg, #AE67FA 0%, #F49867 97.4%);
@@ -115,48 +122,78 @@ header .btn2:hover {
 .hero-section .people {
   width: 40%;
 }
-.hero-section .company {
-  margin-bottom: 100px;
-  margin-left: 20%;
-}
+
 @keyframes roboot-head {
   100% {
     transform: translateY(10%);
   }
 }
-.hero-section .robbot {
+.robbot {
   animation: roboot-head 2s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   width: 100%;
 }
-@media screen and (max-width: 992px) {
-  .hero-section .company {
-    width: 90%;
-    margin-left: 0%;
-    align-items: center;
-    margin-top: 80px;
-    margin-left: 20px;
+
+@keyframes head-text {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
   }
-  .hero-section .visit {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes head-text-two {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 992px) {
+  .visit {
     flex-direction: column;
     margin-bottom: 50px;
+    align-items: center;
   }
-  .hero-section h1 {
+  h1 {
     font-size: 30px;
   }
-  .hero-section .top-p {
+  .top-p {
     font-size: 18px;
   }
-  .hero-section .sub {
+  #email {
+    width: 100%;
+  }
+  .sub {
     margin-left: 0;
+    width: 100%;
     margin-top: 20px;
+    border-radius: 5px;
+  }
+}
+.logo .logo-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo img {
+  width: 100px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 992px) {
+  .logo img {
+    width: 40px;
   }
 }
 
 .sec-two .sec-sub {
-  background: #040C18;
   padding-bottom: 80px;
 }
 .sec-two .sec-page {
@@ -175,6 +212,8 @@ header .btn2:hover {
   margin-left: 40px;
   width: 90%;
   margin-bottom: 50px;
+  animation-name: head-text-two;
+  animation-duration: 2s;
 }
 .sec-two .sec-two-text {
   color: #81AFDD;
@@ -197,6 +236,8 @@ header .btn2:hover {
   font-weight: 800;
   margin-top: 35px;
   margin-left: 40px;
+  animation-name: head-text-two;
+  animation-duration: 2s;
 }
 @media screen and (max-width: 992px) {
   .sec-two h2 {
@@ -242,6 +283,8 @@ header .btn2:hover {
   -webkit-text-fill-color: transparent;
   font-size: 34px;
   font-weight: 800;
+  animation-name: head-text-two;
+  animation-duration: 2s;
 }
 .third-sec .tdtext-one {
   color: #FF8A71;
@@ -250,6 +293,8 @@ header .btn2:hover {
 }
 .third-sec .tdtext-two {
   color: #fff;
+  animation-name: head-text;
+  animation-duration: 2s;
 }
 .third-sec .tdtext-last {
   color: #81AFDD;
@@ -272,7 +317,7 @@ header .btn2:hover {
   margin: 50px 0;
 }
 .fourth-sec .fourth-text {
-  margin-top: 350px;
+  margin-top: 220px;
 }
 .fourth-sec .fttext-one {
   color: #71E5FF;
@@ -288,6 +333,8 @@ header .btn2:hover {
   font-size: 34px;
   font-weight: 800;
   margin: 30px 0;
+  animation-name: head-text-two;
+  animation-duration: 2s;
 }
 .fourth-sec .fttext-two {
   color: #81AFDD;
@@ -301,6 +348,9 @@ header .btn2:hover {
 @media screen and (max-width: 992px) {
   .fourth-sec .fourth-text {
     margin-top: 100px;
+  }
+  .fourth-sec h3 {
+    font-size: 25px;
   }
 }
 
@@ -363,9 +413,6 @@ aside .aside-btn:hover {
   }
 }
 
-.fifth-sec .fifth-sub {
-  background: #040C18;
-}
 .fifth-sec .fifth-page {
   margin-bottom: 130px;
 }
@@ -377,87 +424,110 @@ aside .aside-btn:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 100px 0;
+  animation-name: head-text-two;
+  animation-duration: 2s;
 }
 .fifth-sec .image-one {
-  width: 85%;
+  width: 100%;
 }
 .fifth-sec .image-two {
-  width: 99.9%;
-  margin-left: -30px;
+  width: 100%;
 }
 .fifth-sec .image-three {
-  width: 99.9%;
+  width: 100%;
 }
 .fifth-sec .image-four {
-  width: 99.9%;
-  margin-left: -30px;
+  width: 100%;
 }
 .fifth-sec .image-five {
-  width: 99.9%;
+  width: 100%;
 }
-@media screen and (max-width: 992px) {
-  .fifth-sec .image-two {
-    margin-left: 1px;
-    width: 85%;
-    margin-bottom: 40px;
-  }
-  .fifth-sec .image-four {
-    margin-left: 0;
-    width: 85%;
-    margin-bottom: 40px;
-  }
-  .fifth-sec .image-one {
-    width: 75%;
-    margin-bottom: 40px;
-    margin-left: 18px;
-  }
-  .fifth-sec .image-three {
-    width: 85%;
-  }
-  .fifth-sec .image-five {
-    width: 85%;
-  }
+.fifth-sec .fifth-text1 {
+  height: 100%;
+  background: #042C54;
+  color: #fff;
+  position: relative;
 }
-@media screen and (min-width: 2000px) and (max-width: 2250px) {
-  .fifth-sec .image-four {
-    width: 120%;
-    margin-top: 70px;
-  }
-  .fifth-sec .image-five {
-    width: 120%;
-    margin-left: 50px;
-    margin-top: 70px;
-  }
-  .fifth-sec .image-two {
-    width: 85%;
-  }
-  .fifth-sec .image-three {
-    width: 85%;
-    margin-left: -90px;
-  }
-  .fifth-sec .image-one {
-    width: 78%;
-  }
+.fifth-sec .card-item-body {
+  padding: 30px;
 }
-@media screen and (min-width: 2300px) and (max-width: 3000px) {
-  .fifth-sec .image-four {
-    width: 130%;
-    margin-top: 70px;
+.fifth-sec .text-onep {
+  font-size: 10px;
+}
+.fifth-sec .text-oneh {
+  font-size: 25px;
+  font-weight: 800;
+  animation-name: head-text;
+  animation-duration: 2s;
+}
+.fifth-sec .text-onepb {
+  position: absolute;
+  bottom: 3%;
+}
+.fifth-sec .text-onepb {
+  font-size: 10px;
+}
+.fifth-sec .text-twop {
+  font-size: 10px;
+}
+.fifth-sec .text-twoh {
+  font-size: 15px;
+  font-weight: 800;
+  padding-bottom: 50px;
+  animation-name: head-text;
+  animation-duration: 2s;
+}
+.fifth-sec .text-twopb {
+  font-size: 10px;
+}
+.fifth-sec .fifth-text {
+  background: #042C54;
+  color: #fff;
+  padding: 20px 20px;
+}
+@media screen and (max-width: 640px) {
+  .fifth-sec h2 {
+    font-size: 25px;
   }
-  .fifth-sec .image-five {
-    width: 130%;
-    margin-left: 100px;
-    margin-top: 70px;
+  .fifth-sec .text-onepb {
+    bottom: 0.5%;
   }
   .fifth-sec .image-two {
-    width: 75%;
+    margin-top: 40px;
   }
   .fifth-sec .image-three {
-    width: 75%;
-    margin-left: -140px;
+    margin-top: 40px;
   }
-  .fifth-sec .image-one {
-    width: 70%;
+  .fifth-sec .image-five {
+    margin-top: 40px;
+  }
+  .fifth-sec .fifth-text1 {
+    width: 90%;
+    margin-left: 15px;
+  }
+  .fifth-sec br {
+    display: none;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 990px) {
+  .fifth-sec .fifth-text1 {
+    width: 95%;
+    margin-left: 10px;
+  }
+  .fifth-sec .text-onepb {
+    bottom: 0.5%;
+  }
+  .fifth-sec .image-two {
+    margin-top: 40px;
+  }
+  .fifth-sec .image-three {
+    margin-top: 40px;
+  }
+  .fifth-sec .image-five {
+    margin-top: 40px;
+  }
+  .fifth-sec br {
+    display: none;
   }
 }
 
@@ -478,6 +548,8 @@ aside .aside-btn:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-name: head-text;
+  animation-duration: 2s;
 }
 .last-sec .last-btn {
   border: none;
@@ -507,6 +579,14 @@ aside .aside-btn:hover {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .last-sec br {
+    display: none;
+  }
+  .last-sec h2 {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
