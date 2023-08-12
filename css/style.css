@@ -398,23 +398,24 @@ aside .aside-btn:hover {
 @media screen and (max-width: 992px) {
   .fifth-sec .image-two {
     margin-left: 1px;
-    width: 90%;
+    width: 85%;
     margin-bottom: 40px;
   }
   .fifth-sec .image-four {
     margin-left: 0;
-    width: 90%;
+    width: 85%;
     margin-bottom: 40px;
   }
   .fifth-sec .image-one {
-    width: 90%;
+    width: 75%;
     margin-bottom: 40px;
+    margin-left: 18px;
   }
   .fifth-sec .image-three {
-    width: 90%;
+    width: 85%;
   }
   .fifth-sec .image-five {
-    width: 90%;
+    width: 85%;
   }
 }
 @media screen and (min-width: 2000px) and (max-width: 2250px) {
